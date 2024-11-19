@@ -1,0 +1,174 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "content": "Angular là gì?",
+      "marks": 1,
+      "negativeMarks": 0.25,
+      "options": [
+        {
+          "id": "a",
+          "content": "A front-end framework",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "content": "A back-end framework",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "content": "A database",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "content": "A programming language",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "content": " Chỉ thị nào được sử dụng để tạo liên kết dữ liệu hai chiều trong Angular?",
+      "marks": 1,
+      "negativeMarks": 0.25,
+      "options": [
+        {
+          "id": "a",
+          "content": "ng-model",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "content": "ng-init",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "content": "ng-app",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "content": "ng-bind",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "content": "Mục đích của Angular CLI là gì?",
+      "marks": 1,
+      "negativeMarks": 0.25,
+      "options": [
+        {
+          "id": "a",
+          "content": "Để thực hiện các dự án Angular",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "content": "Để xây dựng và phát triển các ứng dụng Angular",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "content": "Để tạo mẫu Angular",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "content": "Để viết code Angular",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "content": "Which of the following is a lifecycle hook in Angular?",
+      "marks": 1,
+      "negativeMarks": 0.25,
+      "options": [
+        {
+          "id": "a",
+          "content": "ngOnInit",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "content": "ngDestroy",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "content": "ngAfterView",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "content": "ngCreate",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "content": ". Which file is the entry point of an Angular application?",
+      "marks": 1,
+      "negativeMarks": 0.25,
+      "options": [
+        {
+          "id": "a",
+          "content": "index.html",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "content": "main.ts",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "content": "app.module.ts",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "content": "styles.css",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "quizs": [
+    {
+      "id": "1",
+      "name": "HK quiz 1",
+      "code": "user1",
+      "questions": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "2",
+      "name": "HK quiz 2",
+      "code": "user2",
+      "questions": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "quizResults": [
+    {
+    }
+  ]
+}

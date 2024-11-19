@@ -1,0 +1,29 @@
+<div class="min-h-screen flex justify-center items-center bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600">
+  <div class="w-full max-w-lg p-8 bg-white rounded-xl shadow-xl transform transition duration-500 hover:scale-105">
+    <h4 class="text-3xl font-semibold text-center text-indigo-700 mb-6">Nhập Mã Quiz và Tên Của Bạn</h4>
+
+    <!-- Trường Nhập Mã Quiz -->
+    <mat-form-field class="w-full mb-5">
+      <mat-label class="text-indigo-600">Mã Quiz</mat-label>
+      <input type="text" matInput [(ngModel)]="code" placeholder="Nhập Mã Quiz" class="no-outline-input border-2 border-gray-300 rounded-lg py-3 px-4 w-full focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-300" />
+    </mat-form-field>
+
+    <!-- Trường Nhập Tên -->
+    <mat-form-field class="w-full mb-6">
+      <mat-label class="text-indigo-600">Tên Của Bạn</mat-label>
+      <input type="text" matInput [(ngModel)]="name" placeholder="Nhập Tên Của Bạn" class="no-outline-input border-2 border-gray-300 rounded-lg py-3 px-4 w-full focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-300" />
+    </mat-form-field>
+
+    <!-- Hiển thị thông báo lỗi -->
+    <p *ngIf="errorMessage" class="text-red-500 font-semibold mb-4">{{ errorMessage }}</p>
+
+    <!-- Nút Tham Gia -->
+    <div class="flex justify-center">
+      <button mat-raised-button color="primary" class="w-9/12 py-3 text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-lg focus:ring-4 focus:ring-indigo-300 transition duration-300" (click)="join()">
+        <span class="mr-2">Tham Gia</span> <mat-icon>arrow_forward</mat-icon> <!-- Icon Tuỳ Chọn -->
+      </button>
+    </div>
+  </div>
+</div>
+
+
