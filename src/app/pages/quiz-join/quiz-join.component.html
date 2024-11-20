@@ -1,28 +1,60 @@
 <div class="min-h-screen flex justify-center items-center bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600">
   <div class="w-full max-w-lg p-8 bg-white rounded-xl shadow-xl transform transition duration-500 hover:scale-105">
-    <h4 class="text-3xl font-semibold text-center text-indigo-700 mb-6">Nhập Mã Quiz và Tên Của Bạn</h4>
+    <h2 class="text-3xl font-semibold text-center text-indigo-700 mb-6">HỆ THỐNG CÂU HỎI TRẮC NGHIỆM</h2>
 
     <!-- Trường Nhập Mã Quiz -->
-    <mat-form-field class="w-full mb-5">
-      <mat-label class="text-indigo-600">Mã Quiz</mat-label>
-      <input type="text" matInput [(ngModel)]="code" placeholder="Nhập Mã Quiz" class="no-outline-input border-2 border-gray-300 rounded-lg py-3 px-4 w-full focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-300" />
+    <mat-form-field class="w-full mb-2">
+      <mat-label class="text-indigo-700">ID User</mat-label>
+      <input type="text" matInput [(ngModel)]="code" placeholder="Nhập ID User" class="no-outline-input border-2 border-gray-300 rounded-lg py-3 px-4 w-full transition duration-300" />
     </mat-form-field>
 
     <!-- Trường Nhập Tên -->
-    <mat-form-field class="w-full mb-6">
-      <mat-label class="text-indigo-600">Tên Của Bạn</mat-label>
-      <input type="text" matInput [(ngModel)]="name" placeholder="Nhập Tên Của Bạn" class="no-outline-input border-2 border-gray-300 rounded-lg py-3 px-4 w-full focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-300" />
+    <mat-form-field class="w-full mb-2">
+      <mat-label class="text-indigo-700">Tên Của Bạn</mat-label>
+      <input type="text" matInput [(ngModel)]="name" placeholder="Nhập Tên Của Bạn" class="no-outline-input border-2 border-gray-300 rounded-lg py-3 px-4 w-full transition duration-300" />
     </mat-form-field>
+
+    <mat-form-field class="w-full mb-2">
+      <mat-label class="text-indigo-700">Mật Khẩu của bạn</mat-label>
+      <input type="password" matInput [(ngModel)]="password" placeholder="Nhập Mật Khẩu của bạn" class="no-outline-input border-2 border-gray-300 rounded-lg py-3 px-4 w-full transition duration-300" />
+    </mat-form-field>
+
+     <!-- Quên mật khẩu và Đăng ký -->
+    <div class="flex justify-between text-sm">
+      <a href="/forgot-password" class="text-indigo-600 hover:underline">Quên mật khẩu?</a>
+      <a href="/register" class="text-indigo-600 hover:underline">Đăng ký</a>
+    </div>
 
     <!-- Hiển thị thông báo lỗi -->
     <p *ngIf="errorMessage" class="text-red-500 font-semibold mb-4">{{ errorMessage }}</p>
+    <!-- Nút Đăng Nhập Google và Zalo -->
+    <div class="justify-center mt-4 flex gap-4">
+      <!-- Nút Đăng Nhập Google -->
+      <button
+        class="py-2 px-8 text-white bg-red-600 border-gray-300 hover:bg-red-700 rounded-lg shadow-lg focus:ring-4 focus:ring-red-300 transition duration-300 flex items-center justify-center gap-2">
+        <img src="Google__G__logo.svg.webp" alt="Google Logo" class="w-6 h-6">
+        <span>Đăng nhập bằng Google</span>
+      </button>
 
-    <!-- Nút Tham Gia -->
-    <div class="flex justify-center">
-      <button mat-raised-button color="primary" class="w-9/12 py-3 text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-lg focus:ring-4 focus:ring-indigo-300 transition duration-300" (click)="join()">
-        <span class="mr-2">Tham Gia</span> <mat-icon>arrow_forward</mat-icon> <!-- Icon Tuỳ Chọn -->
+      <!-- Nút Đăng Nhập Zalo -->
+      <button
+        class="py-2 px-8 text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-lg focus:ring-4 focus:ring-blue-300 transition duration-300 flex items-center justify-center gap-2">
+        <img src="Icon_of_Zalo.svg.png" alt="Zalo Logo" class="w-6 h-6">
+        <span>Đăng nhập bằng Zalo</span>
       </button>
     </div>
+
+    <br>
+    <!-- Nút Tham Gia -->
+    <div class="flex justify-center">
+      <button type="button" (click)="join()" class="text-white bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-indigo-700 dark:hover:bg-indigo-800 dark:focus:ring-blue-800">
+        Đăng Nhập
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+        </button>
+    </div>
+
   </div>
 </div>
 

@@ -86,7 +86,7 @@
     },
     {
       "id": "4",
-      "content": "Which of the following is a lifecycle hook in Angular?",
+      "content": "Cái nào sau đây là một hook vòng đời trong Angular?",
       "marks": 1,
       "negativeMarks": 0.25,
       "options": [
@@ -114,7 +114,7 @@
     },
     {
       "id": "5",
-      "content": ". Which file is the entry point of an Angular application?",
+      "content": "File nào là điểm vào của ứng dụng Angular?",
       "marks": 1,
       "negativeMarks": 0.25,
       "options": [
@@ -144,7 +144,8 @@
   "quizs": [
     {
       "id": "1",
-      "name": "HK quiz 1",
+      "name": "Bài Trắc Nghiệm 1",
+      "password": "123",
       "code": "user1",
       "questions": [
         1,
@@ -156,7 +157,8 @@
     },
     {
       "id": "2",
-      "name": "HK quiz 2",
+      "name": "Bài Trắc Nghiệm 2",
+      "password": "123",
       "code": "user2",
       "questions": [
         1,
@@ -168,7 +170,5 @@
     }
   ],
   "quizResults": [
-    {
-    }
   ]
 }

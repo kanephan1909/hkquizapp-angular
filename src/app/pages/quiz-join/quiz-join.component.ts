@@ -17,6 +17,7 @@ import {MatIconModule} from '@angular/material/icon';
 export class QuizJoinComponent {
   code: string = '';  // Initialize as an empty string
   name: string = '';  // Initialize as an empty string
+  password: string = ''; //Initialize as an empty string
 
   testservice = inject(TestService);
   router = inject(Router);
@@ -26,8 +27,8 @@ export class QuizJoinComponent {
 
   join() {
     // Kiểm tra xem cả mã và tên đã được cung cấp chưa
-    if (!this.code || !this.name) {
-      alert('Please enter both the quiz code and your name.');
+    if (!this.code || !this.name || !this.password) {
+      alert('Please enter both the quiz code and your name , password.');
       return;
     }
 
@@ -62,4 +63,17 @@ export class QuizJoinComponent {
       },
     });
   }
+
+
+    // Đăng nhập bằng Google
+    signInWithGoogle() {
+      console.log('Đăng nhập với Google');
+      // Tích hợp Google API ở đây
+    }
+
+    // Đăng nhập bằng Zalo
+    signInWithZalo() {
+      console.log('Đăng nhập với Zalo');
+      // Tích hợp Zalo API ở đây
+    }
 }
